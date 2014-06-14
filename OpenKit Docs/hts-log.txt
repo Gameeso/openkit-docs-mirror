@@ -1,0 +1,14 @@
+HTTrack3.48-13+htsswf+htsjava launched on Sat, 14 Jun 2014 11:38:47 at http://openkit.io/documentation/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qiC1%Pxs2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://openkit.io/documentation/ -O1 "C:\My Web Sites\OpenKit Docs" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:39:44	Warning: 	Retry after error -5 (Error attempting to solve status 206 (partial file)) at link openkit.io/images/support/push_step_6.png (from openkit.io/documentation/social-challenges)
+11:39:50	Warning: 	Retry after error -5 (Error attempting to solve status 206 (partial file)) at link openkit.io/images/support/push_step_6.png (from openkit.io/documentation/social-challenges)
+11:39:50	Error: 	"Error attempting to solve status 206 (partial file)" (-5) after 2 retries at link openkit.io/images/support/push_step_6.png (from openkit.io/documentation/social-challenges)
+
+HTTrack Website Copier/3.48-13 mirror complete in 1 minutes 3 seconds : 47 links scanned, 43 files written (3112583 bytes overall), 10 files updated [1557118 bytes received at 24716 bytes/sec], 1.1 requests per connection
+(1 errors, 2 warnings, 0 messages)

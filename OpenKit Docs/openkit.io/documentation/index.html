@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Mirrored from openkit.io/documentation/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Jun 2014 09:38:47 GMT -->
+<head>
+  <meta charset="utf-8">
+  <title>OpenKit Documentation</title>
+  <meta name="description" content="" />
+
+  <link rel="stylesheet" href="../css/reset.css" />
+<link rel="stylesheet" href="../css/support.css" />
+
+<link href='../../external.html?link=http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../css/elusive-webfont.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<script type="text/javascript" src="../js/html5shiv.js"></script>
+<script type="text/javascript" src="../../ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript">
+if (typeof jQuery == 'undefined')
+{
+document.write(unescape("%3Cscript src='../js/jquery-1.8.0.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
+<script type="text/javascript" src="../js/waypoints.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+
+		$('#overview').waypoint(function(direction) {
+	    	if (direction === 'down') {
+				$('.sidenav a').removeClass('active');
+  				$('.overview_link').addClass('active');
+			}
+	  	}, { offset: 0}).waypoint(function(direction) {
+	    	if (direction === 'up') {
+	    		$('.sidenav a').removeClass('active');
+  				$('.overview_link').addClass('active');
+  			}
+	  	}, { offset: -100 });
+
+	  	$('#facebook').waypoint(function(direction) {
+	    	if (direction === 'down') {
+				$('.sidenav a').removeClass('active');
+  				$('.facebook_link').addClass('active');
+			}
+	  	}, { offset: 0}).waypoint(function(direction) {
+	    	if (direction === 'up') {
+	    		$('.sidenav a').removeClass('active');
+  				$('.overview_link').addClass('active');
+  			}
+	  	}, { offset: -100 });
+
+	  	$('#unity').waypoint(function(direction) {
+	    	if (direction === 'down') {
+				$('.sidenav a').removeClass('active');
+  				$('.unity_link').addClass('active');
+			}
+	  	}, { offset: 0}).waypoint(function(direction) {
+	    	if (direction === 'up') {
+	    		$('.sidenav a').removeClass('active');
+  				$('.unity_link').addClass('active');
+  			}
+	  	}, { offset: -100 });
+
+
+	  	$('#ios').waypoint(function(direction) {
+	    	if (direction === 'down') {
+				$('.sidenav a').removeClass('active');
+  				$('.ios_link').addClass('active');
+			}
+	  	}, { offset: 0}).waypoint(function(direction) {
+	    	if (direction === 'up') {
+	    		$('.sidenav a').removeClass('active');
+  				$('.ios_link').addClass('active');
+  			}
+	  	}, { offset: -100 });
+
+	  	$('#android').waypoint(function(direction) {
+	    	if (direction === 'down') {
+				$('.sidenav a').removeClass('active');
+  				$('.android_link').addClass('active');
+			}
+	  	}, { offset: 0}).waypoint(function(direction) {
+	    	if (direction === 'up') {
+	    		$('.sidenav a').removeClass('active');
+  				$('.android_link').addClass('active');
+  			}
+	  	}, { offset: -100 });
+
+
+		$(window).scroll(function(){
+			if ($(this).scrollTop() > 100) {
+				$('.scrollup').fadeIn();
+			} else {
+				$('.scrollup').fadeOut();
+			}
+		});
+
+		$('.scrollup').click(function(){
+			$("html, body").animate({ scrollTop: 0 }, 600);
+			return false;
+		});
+	});
+
+</script>
+</head>
+
+<body class="support" id="overview">
+  <div class="support_wrapper">
+  
+
+  <nav>
+    <a href="../../external.html?link=http://openkit.io/" class="logo" title="OpenKit"><img src="../images/logo.png"></a>
+    <ul>
+      <li><a href="../../external.html?link=http://openkit.io/documentation" class="active">Documentation</a></li>
+      <li><a href="../../external.html?link=http://openkit.io/downloads">Downloads</a></li>
+      <li><a href="../../external.html?link=http://openkit.io/help">Help</a></li>
+      <li><a href="../../external.html?link=http://developer.openkit.io/">Login</a></li>
+      <li><a href="../../external.html?link=http://developer.openkit.io/developers/new">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <section>
+      
+<div class="sidenav">
+  <div class="sidenav_inner">
+
+  <h3><a href="../../external.html?link=http://openkit.io/documentation"><i class="icon-chevron-down"></i> Getting Started</a></h3>
+  <ul class="active">
+    <li><a href="#overview" class="overview_link active">Overview</a></li>
+    <li><a href="#facebook" class="facebook_link">Facebook Setup</a></li>
+    <li><a href="#unity" class="unity_link">Unity</a></li>
+    <li><a href="#ios" class="ios_link">iOS</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>  
+
+  <h3><a href="sample-apps.html"><i class="icon-chevron-right"></i> Sample Apps</a></h3>
+  <ul class="">
+    <li><a href="#unity" class="overview_link active">Unity</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>
+
+  <h3><a href="social-leaderboards.html"><i class="icon-chevron-right"></i> Social Leaderboards</a></h3>
+  <ul class="">
+    <li><a href="#overview" class="overview_link active">Overview</a></li>
+    <li><a href="#unity" class="unity_link">Unity</a></li>
+    <li><a href="#ios" class="ios_link">iOS</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>
+
+  <h3><a href="social-challenges.html"><i class="icon-chevron-right"></i> Social Challenges</a></h3>
+  <ul class="">
+    <li><a href="#" class="overview_link active">Overview</a></li>
+  </ul>
+
+
+<!--
+  <h3><a href="/documentation/smart-invites"><i class="icon-chevron-right"></i> Smart Invites</a></h3>
+  <ul class="">
+    <li><a href="#unity" class="overview_link active">Overview</a></li>
+    <li><a href="#unity" class="unity_link">Unity</a></li>
+    <li><a href="#ios" class="ios_link">iOS</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>
+
+  <h3><a href="/documentation/cloud-storage"><i class="icon-chevron-right"></i> Cloud Storage</a></h3>
+  <ul class="">
+    <li><a href="#unity" class="overview_link active">Overview</a></li>
+    <li><a href="#unity" class="unity_link">Unity</a></li>
+    <li><a href="#ios" class="ios_link">iOS</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>
+
+
+  <h3><a href="/documentation/achievements"><i class="icon-chevron-right"></i> Achievements</a></h3>
+  <ul class=""> 
+    <li><a href="#unity" class="overview_link active">Overview</a></li>
+    <li><a href="#unity" class="unity_link">Unity</a></li>
+    <li><a href="#ios" class="ios_link">iOS</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>
+-->
+
+  <div class="sidenav_buttons">
+    <a href="../../external.html?link=http://openkit.io/downloads">SDK Downloads</a>
+    <a href="../../external.html?link=http://openkit.io/help">Help</a>
+  </div>
+
+</div>
+</div>
+
+      <div class="content">
+        <div class="content_wrapper">
+
+
+          
+          <!------------------------------ OVERVIEW ------------------------------>
+          <h1 class="first">Overview</h1>
+          
+          <p>OpenKit is a set of cross-platform services for game developers. OpenKit makes it easy to integrate social features into your games, such as: Social Leaderboards, Social Challenges (via push notifications), and Smart Invites.</p>
+
+          <p>OpenKit consists of client SDKs and the OpenKit hosted service. OpenKit is completely open source, including the back end.</p>
+
+          <h2>OpenKit Developer Dashboard</h2>
+          <p>Manage the ways that you use OpenKit's services through the developer dashboard at <a href="../../external.html?link=http://developer.openkit.io/">developer.openkit.io</a>.  Here, you can add new apps, create and modify leaderboards, and see your usage stats.</p>
+
+          <h2>OpenKit App Key</h2>
+          <p>Your game will identify itself to the OpenKit backend using a unique app key and secret key. This key is generated automatically when you add a new app through the developer dashboard. The key assigned to your game should be copied into the game's OpenKit initialization code. See the platform specific integration guide (in the sidebar) for more. </p>
+
+          <h2>OpenKit Users</h2>
+          <p>OpenKit provides user account management through Facebook and Google. When a user of your app authenticates through one of these services, their info is stored as an "OpenKit User" (represented by OKUser in our SDKs). If they are using your app from multiple devices, they will need to login with the same service (e.g. Facebook) on each device to be recognized as the same user. Users have an option of specifying a nickname for their OpenKit accounts.</p>
+
+          <p>All leaderboard scores submitted to OpenKit are tied to an OpenKit user.</p>
+
+<!--
+          <h2>Cloud Storage</h2>
+          <p>The OpenKit cloud allows you to store user data in the cloud, and retrieve it across multiple devices and platforms. Data is always tied to a specific OKUser. To get and store data, the user must be logged into OpenKit in your application.</p>
+          <p>The OpenKit cloud lets you store basic types of data, including strings, numbers, arrays, and Dictionaries (HashMap on Android).</p>
+-->
+
+          <h2>Social Leaderboards</h2>
+          <p>OpenKit Social Leaderboards allow players to compete against friends on any device or user network.  Players, or OKUsers, authenticate through either Facebook or Google. Players can view leaderboards without authenticating, but they must authenticate to post their own scores.</p>
+          <p>To submit a score to a specific leaderboard, you must know the leaderboard's ID, which is found in the developer dashboard.</p>
+
+		<h2>Offline Support</h2>
+		<p>OpenKit has offline support for Social Leaderboards. If a player is not yet authenticated (e.g. no OKUser object), or doesn't have network connectivity, OpenKit caches any submitted scores locally on the device. When the player authenticates or regains connectivity, those scores are submitted to the leaderboard.</p>
+		
+
+          <!------------------------------ OVERVIEW ------------------------------>
+
+
+
+          <!------------------------------ DASHBOARD ------------------------------>
+          <!--
+          <h1>Using the OpenKit Dashboard</h1>
+
+          <p>The OpenKit Dashboard is your interface to easily manage your games, leaderboards, and more, on the OpenKit server. This is necessary to set up OpenKit features for your apps and users to use.</p>
+
+          <h2>Login or Setup an Account</h2>
+
+          <p>Your first step is to log in to the OpenKit Dashboard. If you have not yet set up an account, you can apply for private beta access here: <a href="http://stage.openkit.io/developers/new">http://stage.openkit.io/developers/new</a></p>
+
+          <h2>Add a New App</h2>
+
+          <p>Adding a new app in the dashboard is easy. Simply start by clicking the <b>"Add New App"</b> button on the Dashboard's front page.</p>
+
+          <img src="../images/support/dashboard1.png" style="max-width:700px;height:auto;">
+
+          <p>On the resulting page fill in the App's name, add an icon (optional), and press the <b>"Create App"</b> button.</p>
+
+          <img src="../images/support/dashboard2.png" style="max-width:700px;height:auto;">
+
+          <p>After that, you should see your newly created App:</p>
+
+          <img src="../images/support/dashboard3.png" style="max-width:700px;height:auto;">
+
+          <p>Take special note of the alphanumeric <b>"App Key"</b> on the right. This is the ID that your OpenKit games will use to communicate with the backend.</p>
+
+          <h2>Add a New Leaderboard</h2>
+
+          <p>Just as it's extremely simple to add a new App in the OpenKit Dashboard, it's also very simple to add a new Leaderboard for your game.  Start by following the <b>"Leaderboards"</b> link that appears on your new App's page. Afterwards, you should see something like the following:</p>
+
+          <img src="../images/support/dashboard4.png" style="max-width:700px;height:auto;">
+
+          <p>Click the <b>"Add a New Leaderboard"</b> button and enter the name of the leaderboard, whether higher or lower values are better, and the icon you'd like to display inside the client. Click <b>"Create Leaderboard"</b> and you're done! You'll be immediately taken to the page for your newly created leaderboard:</p>
+
+          <img src="../images/support/dashboard5.png" style="max-width:700px;height:auto;">
+
+          <p>Again, take special note of the <b>"ID"</b> on the right. This leaderboard ID is what your OpenKit games will use to communicate with the backend.</p>
+
+          <p>Also note the <b>"In Development"</b> field. When this flag is set all scores submitted to the leaderboard are marked as in development.  When you clear this flag by editing a leaderboard, all the development data submitted while it was TRUE will be erased.</p>
+
+          <h2>Browse Cloud Data</h2>
+
+          <p>Coming Soon</p>
+        -->
+          <!------------------------------ DASHBOARD ------------------------------>
+
+
+
+
+
+
+          <div id="facebook"></div>
+          <!------------------------------ FACEBOOK ------------------------------>
+          <h1>Creating a Facebook App for your game</h1>
+
+          <p>When creating an OpenKit enabled game, you need to create a Facebook Application to allow users to authenticate with your game. You then supply this Facebook Application ID to the OpenKitSDK in your game.</p>
+
+          <p>This guide walks you through the process of creating a Facebook app.</p>
+
+          <p>If you have a cross-platform game, you can use the same Facebook application for your game on both platforms. This guide walks you through both iOS and Android. </p>
+
+          <h2>1. Create a Facebook Application</h2>
+
+          <p>Go to <a href="../../external.html?link=https://developers.facebook.com/">https://developers.facebook.com/</a> and click on "Apps" in the top bar. From the next page, press "Create New"</p>
+
+          <img src="../images/support/fb_1.png" style="max-width:700px;height:auto;">
+
+          <p>Enter your App name, and optionally, a namespace if you want to do further Facebook integration. </p>
+
+          <p>Once you create your Facebook app, you'll see your Facebook <b>App ID</b> and your <b>App Secret</b>. This App ID is what you pass to the OpenKitSDK in your game.  </p>
+
+
+          <h2>2. Enter your App Information</h2>
+
+          <h3>iOS App Information</h3>
+
+          <p>If you have an iOS app, you need to enter some information in the "Native iOS App" tab.</p>
+
+          <p>Enter your bundle ID, app store ID (if the app is live), and be sure to enable "Facebook Login".</p>
+
+          <img src="../images/support/fb_2.png">
+
+          <p>If you want to support further Facebook integration, you can enable deep linking and setup a URL scheme suffix. See the Facebook docs for more info.</p>
+
+          <div class="platform note">
+            <p><b>Unity:</b> If you're developing with Unity, the package name should be your bundle identifier set in player settings.</p>
+          </div>
+
+          <h3>Android App Information</h2>
+
+          <p>If you have an Android app, click on the "Native Android App" tab.</p>
+
+          <p>Enter your package name. (you can find this in your AndroidManifest.xml file, part of the manifest tag).</p>
+
+          <p>Enter the class name of your Main Activity. This is required if you want to enable native linking from the Facebook newsfeed to your game. This is the activity that the Facebook app will attempt to launch. </p>
+
+          <p>Be sure to enable "Facebook Login"</p>
+
+          <img src="../images/support/fb_3.png">
+
+          <div class="platform note">
+          <p><b>Unity:</b> If you're developing with Unity, the package name should be your bundle identifier set in player settings.</p>
+
+
+          <p>For class name, you need to find the class name of the launcher activity created by your Unity project. To do this, export your game to an Eclipse Project in Unity, then open AndroidManifest.xml in the resulting project, look for the main activity. It will have an intent filter declaring it as the main activity and the launcher activity. For example, it will look something like this:</p>
+          <pre><code>&lt;!-- Default Unity Activities --&gt;
+        &lt;activity <b>android:name="com.test.openkittest.TestPackageProxyActivity"</b>
+                android:label="@string/app_name"
+                android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+                android:screenOrientation="portrait"&gt;
+                        &lt;intent-filter&gt;
+                                &lt;action android:name="android.intent.action.MAIN" /&gt;
+                                &lt;category android:name="android.intent.category.LAUNCHER" /&gt;
+                        &lt;/intent-filter&gt;
+        &lt;/activity&gt;
+          </code></pre>
+
+        <p>In this particular example, the class name would be set to "com.test.openkittest.TestPackageProxyActivity"</p>
+        </div>
+
+          <h3>Get your Android Keyhash</h3>
+
+          <p>Android applications are required to be signed before they are released and can run on a device. Facebook requires that you store your application's keyhash with the Facebook application that you create. This is used to check the authenticity of the application.</p>
+
+          <p>For debugging and early integration, you can add your debug keyhash to your Facebook application, so that you can test your app on your device. You can add multiple keyhashes to each Facebook application, so if you have multiple developers testing, they can all add their keyhash here. </p>
+
+          <p>It's a good idea to put both your debug and release keyhashes if you already have them both. </p>
+
+          <p>(The following instructions are taken from the Facebook android SDK getting started guide here: <a href="../../external.html?link=https://developers.facebook.com/docs/android/getting-started/facebook-sdk-for-android/)">https://developers.facebook.com/docs/android/getting-started/facebook-sdk-for-android/)</a></p>
+
+          <p>To generate your debug keyhash, you will use Java's keytool utility against the Android debug keystore. By deafult, this is in your home .android directory.</p>
+
+          <div class="platform">
+            <p><b>On OSX, run:</b></p>
+
+            <pre><code>keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore | openssl sha1 -binary | openssl base64</code></pre>
+          </div>
+
+          <div class="platform">
+            <p><b>On Windows, use:</b></p>
+
+            <pre><code>keytool -exportcert -alias androiddebugkey -keystore %HOMEPATH%\.android\debug.keystore | openssl sha1 -binary | openssl base64</code></pre>
+          </div>
+
+          <p>You will be prompted for a password. This should be "android" without quotes. You will then be given a keyhash which is about 30 characters, and you then need to paste it in Android keyhas field (including the equal sign at the end).</p>
+
+          <p>When you release your game, be sure to add the keyhash of your signed application to your Facebook app, otherwise Facebook sign in won't work. </p>
+
+          <div class="platform note">
+            <p><b>Reminder:</b> Be SURE to get the release keyhash of your signed released Android build, and add it to your Facebook application before submitting your game!</p>
+
+			<p>We recommend creating your release keystore and storing it in the same folder as your project.To generate your release keyhash, run this command, and be sure to properly input the correct <b>ALIAS</b> and <b>KEYSTORE</b>.
+			
+			<pre><code>keytool -exportcert -alias YOUR_ALIAS -keystore YOUR_RELEASE_KEYSTORE | openssl sha1 -binary | openssl base64</code></pre>	
+			
+			<p>For more info about signing your Android application and creating a keystore, see the Android guide here: <a href="../../external.html?link=http://developer.android.com/tools/publishing/app-signing.html">Signing your Application</a></p>
+			
+			<p>If you forget the alias of the key you used when signing your application, you can run this command against your keystore to list the aliases available </p>
+			
+			<pre><code>keytool -list -keystore YOUR_RELEASE_KEYSTORE</code></pre>
+				
+          </div>
+
+          <h2>4. Configure the OpenKitSDK with your Facebook app id</h2>
+
+          <p>Now that you've setup your Facebook application and have the app id, you need to configure the OpenKitSDK in your game so that it has this app ID.
+
+          <p>For Android, see step number 8 in the <a href="#android">Android integration guide</a>.
+
+          <p>For iOS, see the <a href="#ios">iOS integration guide</a>.</p>
+
+        <!------------------------------ FACEBOOK ------------------------------>
+
+
+
+
+        <div id="unity"></div>
+        <!------------------------------ UNITY INTEGRATION ------------------------------>
+        <h1>Integrating OpenKit into your Unity Project</h1>
+
+		<p>If you haven't already, you will want to get the <a href="../../external.html?link=http://openkit.io/downloads">latest OpenKit Unity SDK plugin</a>.</p> 
+			
+		<p>OpenKit requires Unity 4.2 or higher! We're unable to support Unity 3.x.</p>
+
+        <h2>Integration Steps</h2>
+		
+		<h3>1. Setup and Install the Facebook Unity SDK in your project</h3>
+		<p>The OpenKit Unity SDK requires the Facebook Unity SDK.</p>
+		<p><a href="../../external.html?link=https://developers.facebook.com/docs/unity/">Download the Facebook Unity SDK from here.</a></p>
+		<p><a href="../../external.html?link=https://developers.facebook.com/docs/unity/getting-started/canvas">Follow the instructions here to import and setup the Facebook Unity SDK.</a> You will create a Facebook Application and configure all its settings.<p>
+
+
+        <h3>2. Import the OpenKit Unity SDK</h3>
+        <p>From the Asset menu, choose <b>Assets --> Import Package --> Custom Package</b>.</p>
+		<p>Select the OpenKit plugin package, and be sure to import ALL files.</p>
+
+        <h3>3. Set your OpenKit app key and secret key</h3>
+        <p>From the "Window" menu item in the Unity editor window, choose <b>Window --> OpenKit --> Config</b>.</p>
+		<p>In the configuration window that pops up, enter your OpenKit application key, secret key, and enter your Facebook Application ID and press Apply.</p>
+		<img src="../images/ok_settings.png">
+		<p>You will find your OpenKit application key and secret key from the developer dashboard at <a href="../../external.html?link=http://developer.openkit.io/">http://developer.openkit.io</a></p>
+		
+		<h3>4. Add the OpenKit prefab in the first scene in your game</h3>
+		<p>The OpenKit plugin comes with a prefab that takes care of initialization.</p>
+		<p>Grab the prefab from <b>Assets/Prefabs/OpenKitPrefab</b>, and add it into your game's first scene. This is required to properly initialize the OpenKit SDK. </p> 
+		
+		<img src="../images/ok_prefab.png">
+
+        <h3>5. Check out the  OpenKit Demo Scene and Script</h3>
+        <p>There is a demo scene that shows OpenKit login, leaderboards, and submitting scores.</p>
+        <p>Check out the scene and script in <b>Assets/Examples/OKDemoScene</b>.</p> 
+		<p>Add this scene and build and run on iOS and Android to try it out. When running the demo scene, for Facebook authentication to work properly on both iOS and Android, you need to create your own Facebook application and use that application ID. </p>
+
+
+        <!------------------------------ UNITY INTEGRATION ------------------------------>
+
+
+
+
+
+
+
+
+<div id="ios"></div>
+<!------------------------------ IOS ------------------------------>
+        <h1>Integrating OpenKit into an iOS Game</h1>
+
+<h2>1. Download the OpenKit iOS SDK</h2>
+
+<p>If you haven't already, you will want to get the <a href="../../external.html?link=http://openkit.io/downloads">latest OpenKit iOS SDK</a>. OpenKit requires iOS version 5.1 or higher.</p>
+
+<p>Inside the SDK, right now you'll be most directly concerned with the following folders:</p>
+
+<pre><code>    
+/OpenKitSDK		&lt;-- The OpenKit SDK. Drag this entire folder into your Xcode project to use it. 
+/Samples		&lt;-- Sample app showing usage of OpenKit
+</code></pre>
+
+<h2>2. Drag the OpenKitSDK folder into your Xcode project</h2>
+<p>To add the SDK, simply drag the entire "OpenKitSDK" folder into your Xcode project.</p>
+
+<h2>3. Add the required frameworks</h2>
+<p>OpenKit requires the following frameworks. If you don't already have them in your project, add them by selecting your project, choosing "Build Phases", then clicking on "Link Binary With Libraries", and then clicking the "+" button.
+
+<p>Add the following frameworks to your project:</p>
+
+<pre><code>libsqlite3.dylib
+Security.framework
+QuartzCore.framework
+AdSupport.framework
+Accounts.framework 
+Social.framework 
+MobileCoreServices.framework
+SystemConfiguration.framework
+</code></pre>
+
+<p>You can set the Accounts framework and the Social framework as optional.<p>
+
+<p>Finally, add the following lines to your prefix file:</p>
+
+<pre><code>#import &lt;SystemConfiguration/SystemConfiguration.h&gt;
+#import &lt;MobileCoreServices/MobileCoreServices.h&gt;
+</code></pre>
+
+<h2>3. Setup A Facebook App ID For Your OpenKit Project</h2>
+
+<p>Follow <a href="#facebook">this guide</a> to create a Facebook application for your game in the Facebook Developers site.</p>
+
+<p>Once you create a Facebook App, you will need to specify your Facebook App ID and app display name in your project's .plist file, as seen below.</p>
+
+<div class="platform note"><p>The Facebook iOS SDK version 3.5 requires that you also specify your application's display name in your plist file. Create a new entry in your plist named <b>FacebookDisplayName</b> of type string, and enter the display name you used when creating your Facebook application.</p></div>
+
+<p><img src="../images/support/ios_2.png" alt="" title="" /></p>
+
+<h3>Setup custom URL scheme</h3>
+<p>You need to set up a custom URL Type for your project's target using the Facebook App ID. This allows users to re-enter the app when logging into Facebook through Mobile Safari.</p>
+
+<p>To find where to set a custom URL Type, select your Project in the Project Navigator View, then select the target corresponding to the application, select the "Info" tab, scroll down to and expand the "URL Types" section, and click the "+" button to start adding a new Type.</p>
+
+<p><img src="../images/support/ios_3.png" alt="" title="" style="max-width:700px;height:auto" /></p>
+
+<p>Finally, make sure that your project's AppDelegate implements and handles the application:openURL:sourceApplication:annotation: protocol method as follows:</p>
+
+<pre><code>- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+    {
+        return [OKManager handleOpenURL:url];
+    }</code></pre>
+
+<h2>4. Setup Your Application on the OpenKit Dashboard</h2>
+
+<p>If you haven't already, you should go to the <a href="../../external.html?link=http://developer.openkit.io/">OpenKit dashboard</a> and create an entry for your application. Take note of the App Key assigned to it as you'll need that for the next step.</p>
+
+<p><img src="../images/support/ios_4.png" alt="" title="" style="max-width:700px;height:auto"  /></p>
+
+<h2>5. Initialize the SDK and Set Your Application ID</h2>
+
+<p>First, import the OpenKit Header.</p>
+
+<pre><code>#import "OpenKit.h"
+</code></pre>
+
+<p>Specify your application key in application:didFinishLaunchingWithOptions:.</p>
+
+<pre><code>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary
+
+*)launchOptions
+{
+    // Always enter your app key in didFinishLaunchingWithOptions
+    NSString *myAppKey = @"BspfxiqMuYxNEotLeGLm";
+    NSString *mySecretKey = @"2sHQOuqgwzocUdiTsTWzyQlOy1paswYLGjrdRWWf";
+
+    [OKManager configureWithAppKey:myAppKey secretKey:mySecretKey];
+    ...
+}
+</code></pre>
+
+<h2>6. Add User Login and Logout Code</h2>
+
+<p>You prompt users to login at anytime with the following:</p>
+
+<pre><code>
+if([OKUser currentUser] == nil) {
+	OKLoginView *loginView = [[OKLoginView alloc] init];
+
+	[loginView showWithCompletionHandler:^{
+    	// The login view was dismissed
+    	// You can check whether the user is currently logged in
+    	// by calling [OKUser currentUser]
+	}];
+}
+</code></pre>
+
+<p>If you're using OpenKit leaderboards, your users will be prompted to log in when the Leaderboards UI is shown. </p>
+
+<p>You can logout a user using the following:</p>
+
+<pre><code>[OKUser logoutCurrentUserFromOpenKit];
+</code></pre>
+
+<h2>7. Manage User Accounts</h2>
+
+<p>OpenKit provides a user class, OKUser, that manages most of the functionality you'll need for account management.</p>
+
+<p>To get the current OpenKit user, simply call:</p>
+
+<pre><code>if([OKUser currentUser] != nil) {
+    //User is logged in
+    OKUser *currentUser = [OKUser currentUser];
+}
+else{
+    // No user is logged in
+}
+</code></pre>
+
+<p>You can get the current user any time, it will return null if the user is not authenticated.</p>
+
+<p>Because OpenKit uses Facebook and Twitter as authentication providers, you don't need to worry about user account management.</p>
+
+<p>Users are unique to each developer, but can be shared across multiple OpenKit applications from the same developer account.</p>
+
+<h2>8. Setup Leaderboards</h2>
+
+<p>The OpenKit SDK provides a drop in solution for cross-platform leaderboards that work on both iOS and Android.</p>
+
+<p><img src="../images/support/ios_5.png" alt="" title="" style="max-width:700px;height:auto" /></p>
+
+<p>You will need to define your leaderboards and their attributes in the OpenKit dashboard. Your application references each leaderboard through the ID listed on the OpenKit dashboard.</p>
+
+<h2>9. Show Leaderboards</h2>
+
+<p>Make sure that you've imported the OpenKit header file:</p>
+
+<pre><code>#import "OpenKit.h"
+</code></pre>
+
+<p>Next, you will start the Leaderboards view controller. If the user isn't logged in, they will be prompted to login when the view is shown.</p>
+
+<pre><code>OKLeaderboardsViewController *leaderBoards = [[OKLeaderboardsViewController alloc] init];
+[self presentModalViewController:leaderBoards animated:YES];
+</code></pre>
+
+<p>This will show a list of all the leaderboards defined for your app. You can also see the scores through the Leaderboard's entry on the OpenKit dashboard.</p>
+
+<h2>10. Submit a Score</h2>
+
+<p>To submit a score, you simply create an OKScore object, set it's value, and then call submit. If you are using OpenKit combined with Game Center, when submitting a score you will need to specify the Game Center leaderboard category for that score. </p>
+
+<p>You can use blocks callbacks to appropriately handle both success and failure when submitting a score.</p>
+
+<pre><code>OKScore *scoreToSubmit = [[OKScore alloc] init];
+[scoreToSubmit setOKLeaderboardID:23];
+[scoreToSubmit setGamecenterLeaderboardID:@"level1"];
+
+[scoreToSubmit setScoreValue:487];
+[scoreToSubmit setDisplayString:@"487 points"];
+
+[scoreToSubmit submitScoreWithCompletionHandler:^(NSError *error) {
+    if(error) {
+        //There was an error submitting the score
+        NSLog(@"Error submitting score: %@", error);
+    }
+    else {
+        //Score submitted successfully
+    }
+}
+</code></pre>
+
+<p>When submitting a score, if a player is not authenticated with OpenKit, their score will be cached locally and submitted later when they authenticate</p>
+
+
+<!------------------------------ IOS ------------------------------>
+
+
+
+
+
+
+
+
+<div id="android"></div>
+<!------------------------------ ANDROID INTEGRATION ------------------------------>
+<h1>Integrating OpenKit into an Android Game</h1>
+
+The OpenKit Android SDK requires Eclipse with ADT.
+
+<h2>1. Download the OpenKit Android SDK</h2>
+<p>If you haven't already, you will want to get the latest <a href="../../external.html?link=http://openkit.io/downloads/">OpenKit Android SDK</a>. OpenKit works with Android 2.3 and higher, but is best supported on Android 4.0+.
+
+Inside the SDK you'll see the following folders:
+
+<pre><code>    
+/OpenKitSDK		&lt;-- The OpenKit SDK. This is an Android library rpoject
+/samples		&lt;-- Sample app showing usage of OpenKit
+</code></pre>
+
+<h2>2. Import the SDK and Sample App into Eclipse </h2>
+
+<p>Choose File --> Import --> General --> Existing Projects into Workspace</p>
+
+<img src="../images/support/android_1.png">
+
+<p>Click next, click Browse, and select to the parent folder of the OpenKit SDK and click OK.</p>
+
+<p>You should then see three projects: OKSampleApp, OpenKitSDK, and FacebookSDK. Make sure all three are checked and click finish.</p>
+
+<img src="../images/support/android_9.png">
+
+<h2>3. Link your project to the OpenKitSDK</h2>
+
+<p>To link your project against the OpenKitSDK, select your Project Properties and click on the "Android" tab</P>
+<p>In the "Library" section, click "Add" and choose the OpenKitSDK project. </p>
+<img src="../images/support/android_7.png">
+
+<p>Click OK. You should see a relative reference to the OpenKitSDK project with a green checkmark, like this:</p>
+
+<img src="../images/support/android_8.png">
+
+<h2>4. Initialize the OpenKit SDK In your game Activity in onCreate</h2>
+
+<p>In your game's main activity, and any other launcher activities, initialize the OpenKit SDK as follows. </p>
+
+<pre><code>    
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+	super.onCreate(savedInstanceState);
+	...
+		
+	// Grab your app key and secret key from the OpenKit dashboard at http://developer.openkit.io/
+	String myAppKey = "BspfxiqMuYxNEotLeGLm";
+	String mySecretKey = "2sHQOuqgwzocUdiTsTWzyQlOy1paswYLGjrdRWWf";
+
+
+	// Initialize OpenKit. You must call this when your app starts (so we call it in onCreate in our MainActivity)
+	OpenKit.configure(this, myAppKey, mySecretKey);
+		
+	...
+}
+</code></pre>
+
+
+<p>Be sure to set your application key correctly, which you'll get from the OpenKit dashboard.</p>
+
+<h2>5. Add the OpenKit activity declarations to your AndroidManifest.xml file</h2>
+
+
+
+<p>The OpenKit SDK includes several Activities to show leaderboards and manage user accounts. You need to declare these in your AndroidManifest.xml.</p>
+
+<p>Copy the following Activity declarations into your AndroidManifest.xml file, inside the Application tag.</p>
+
+<pre><code>
+&lt;application&gt;
+...
+	&lt;!-- Declare the OpenKit activities as follows, these are required for OpenKit login and to show leaderboards --&gt;
+	&lt;activity
+            android:name="io.openkit.OKLoginActivity"
+            android:theme="@style/Theme.Transparent" /&gt;
+	&lt;activity android:name="io.openkit.leaderboards.OKLeaderboardsActivity" /&gt;
+	&lt;activity android:name="io.openkit.leaderboards.OKScoresActivity" /&gt;
+	&lt;activity android:name="io.openkit.user.OKUserProfileActivity" /&gt;
+	&lt;activity android:name="io.openkit.facebook.LoginActivity" /&gt;
+...
+&lt;/application&gt;
+</code></pre>
+
+<p>This also includes an activity declaration from the Facebook SDK. This is required to support Facebook authentication.</p>
+
+<h2>6. Add the Internet and Accounts permissions to your AndroidManifest.xml file</h2>
+
+<p>The OpenKit SDK requires the INTERNET permission to perform network calls, and uses the Accounts and Credentials permission to support Google authentication. </p>
+	
+<p>Add this permission in your AndroidManifest.xml file by copying the following into your file. Add the following permission BEFORE the Application tag:</p>
+
+<pre><code>
+&lt;!-- Must add the INTERNET permission for OpenKit and the Facebook SDK to Work --&gt;
+   &lt;uses-permission android:name="android.permission.INTERNET" /&gt;
+   &lt;!-- Must add the GET_ACCOUNTS and USE_CREDENTIALS perimissions to support Google auth --&gt;
+   &lt;uses-permission android:name="android.permission.GET_ACCOUNTS" /&gt;
+   &lt;uses-permission android:name="android.permission.USE_CREDENTIALS" /&gt;
+</code></pre>
+
+
+<h2>7. Create a Facebook application for your game</h2>
+
+<p>Follow <a href="#facebook">this guide</a> to create a Facebook application for your game in the Facebook Developers site. The guide will also show you how to add your Android keyhash to your Facebook application.</p>
+
+<p>Once you create a Facebook App, you will need to specify your Facebook App ID in your AndroidManifest.xml file, which is the next step.</p>
+
+<h2>8. Specify your Facebook Application ID in your game</h2>
+
+<p>First create a string resource item in your strings.xml file that will hold your Facebook application ID. Name it <b>"fb_app_id"</b> .</p>
+
+<p>Here's an example:</p>
+
+<pre><code>
+&lt;resources&gt;
+ 
+    &lt;string name="app_name"&gt;OKSampleApp&lt;/string&gt;
+    ...
+    &lt;!-- app_id is the Facebook APP ID. This is required by the Facebook SDK --&gt;
+    &lt;string name="fb_app_id"&gt;783333921362822&lt;/string&gt;
+    ...
+&lt;/resources&gt;
+</code></pre>
+
+
+<p>Then create a metadata item in your AndroidManifest.xml named <b>"com.facebook.sdk.ApplicationID"</b> with a value of <b>"@string/fb_app_id"</b>. Here's an example of how it should look like:</p>
+
+<pre><code>
+&lt;!-- Metadata tag required by facebook SDK. References the FB app id stored in strings --&gt;
+&lt;meta-data
+	android:name="com.facebook.sdk.ApplicationId"
+	android:value="@string/fb_app_id" /&gt;
+</code></pre>
+
+<h2>9. Start using the OpenKit API!</h2>
+
+<p>That's all it takes to get up and running with the OpenKit SDK in your game. You should be able to run the app now, integrate cloud storage, leaderboards, and user authentication.</p>
+
+<p>Take a look at our API documentation here: <a href="../../external.html?link=http://github.com/OpenKit/openkit-android">http://github.com/OpenKit/openkit-android</a></p>
+<!------------------------------ ANDROID INTEGRATION ------------------------------>
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<a href="#" class="scrollup"><i class="icon-caret-up"></i></a>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36989109-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+
+<!-- Mirrored from openkit.io/documentation/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Jun 2014 09:38:47 GMT -->
+</html>

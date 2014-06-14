@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Mirrored from openkit.io/documentation/sample-apps by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Jun 2014 09:38:47 GMT -->
+<head>
+  <meta charset="utf-8">
+  <title>OpenKit Documentation - Social Leaderboards</title>
+  <meta name="description" content="" />
+
+  <link rel="stylesheet" href="../css/reset.css" />
+<link rel="stylesheet" href="../css/support.css" />
+
+<link href='../../external.html?link=http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../css/elusive-webfont.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<script type="text/javascript" src="../js/html5shiv.js"></script>
+<script type="text/javascript" src="../../ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript">
+if (typeof jQuery == 'undefined')
+{
+document.write(unescape("%3Cscript src='../js/jquery-1.8.0.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
+<script type="text/javascript" src="../js/waypoints.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+
+		$('#overview').waypoint(function(direction) {
+	    	if (direction === 'down') {
+				$('.sidenav a').removeClass('active');
+  				$('.overview_link').addClass('active');
+			}
+	  	}, { offset: 0}).waypoint(function(direction) {
+	    	if (direction === 'up') {
+	    		$('.sidenav a').removeClass('active');
+  				$('.overview_link').addClass('active');
+  			}
+	  	}, { offset: -100 });
+
+	  	$('#facebook').waypoint(function(direction) {
+	    	if (direction === 'down') {
+				$('.sidenav a').removeClass('active');
+  				$('.facebook_link').addClass('active');
+			}
+	  	}, { offset: 0}).waypoint(function(direction) {
+	    	if (direction === 'up') {
+	    		$('.sidenav a').removeClass('active');
+  				$('.overview_link').addClass('active');
+  			}
+	  	}, { offset: -100 });
+
+	  	$('#unity').waypoint(function(direction) {
+	    	if (direction === 'down') {
+				$('.sidenav a').removeClass('active');
+  				$('.unity_link').addClass('active');
+			}
+	  	}, { offset: 0}).waypoint(function(direction) {
+	    	if (direction === 'up') {
+	    		$('.sidenav a').removeClass('active');
+  				$('.unity_link').addClass('active');
+  			}
+	  	}, { offset: -100 });
+
+
+	  	$('#ios').waypoint(function(direction) {
+	    	if (direction === 'down') {
+				$('.sidenav a').removeClass('active');
+  				$('.ios_link').addClass('active');
+			}
+	  	}, { offset: 0}).waypoint(function(direction) {
+	    	if (direction === 'up') {
+	    		$('.sidenav a').removeClass('active');
+  				$('.ios_link').addClass('active');
+  			}
+	  	}, { offset: -100 });
+
+	  	$('#android').waypoint(function(direction) {
+	    	if (direction === 'down') {
+				$('.sidenav a').removeClass('active');
+  				$('.android_link').addClass('active');
+			}
+	  	}, { offset: 0}).waypoint(function(direction) {
+	    	if (direction === 'up') {
+	    		$('.sidenav a').removeClass('active');
+  				$('.android_link').addClass('active');
+  			}
+	  	}, { offset: -100 });
+
+
+		$(window).scroll(function(){
+			if ($(this).scrollTop() > 100) {
+				$('.scrollup').fadeIn();
+			} else {
+				$('.scrollup').fadeOut();
+			}
+		});
+
+		$('.scrollup').click(function(){
+			$("html, body").animate({ scrollTop: 0 }, 600);
+			return false;
+		});
+	});
+
+</script>
+</head>
+
+<body class="support" id="overview">
+  <div class="support_wrapper">
+  
+
+  <nav>
+    <a href="../../external.html?link=http://openkit.io/" class="logo" title="OpenKit"><img src="../images/logo.png"></a>
+    <ul>
+      <li><a href="../../external.html?link=http://openkit.io/documentation" class="active">Documentation</a></li>
+      <li><a href="../../external.html?link=http://openkit.io/downloads">Downloads</a></li>
+      <li><a href="../../external.html?link=http://openkit.io/help">Help</a></li>
+      <li><a href="../../external.html?link=http://developer.openkit.io/">Login</a></li>
+      <li><a href="../../external.html?link=http://developer.openkit.io/developers/new">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <section>
+      
+<div class="sidenav">
+  <div class="sidenav_inner">
+
+  <h3><a href="../../external.html?link=http://openkit.io/documentation"><i class="icon-chevron-right"></i> Getting Started</a></h3>
+  <ul class="">
+    <li><a href="#overview" class="overview_link active">Overview</a></li>
+    <li><a href="#facebook" class="facebook_link">Facebook Setup</a></li>
+    <li><a href="#unity" class="unity_link">Unity</a></li>
+    <li><a href="#ios" class="ios_link">iOS</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>  
+
+  <h3><a href="sample-apps.html"><i class="icon-chevron-down"></i> Sample Apps</a></h3>
+  <ul class="active">
+    <li><a href="#unity" class="overview_link active">Unity</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>
+
+  <h3><a href="social-leaderboards.html"><i class="icon-chevron-right"></i> Social Leaderboards</a></h3>
+  <ul class="">
+    <li><a href="#overview" class="overview_link active">Overview</a></li>
+    <li><a href="#unity" class="unity_link">Unity</a></li>
+    <li><a href="#ios" class="ios_link">iOS</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>
+
+  <h3><a href="social-challenges.html"><i class="icon-chevron-right"></i> Social Challenges</a></h3>
+  <ul class="">
+    <li><a href="#" class="overview_link active">Overview</a></li>
+  </ul>
+
+
+<!--
+  <h3><a href="/documentation/smart-invites"><i class="icon-chevron-right"></i> Smart Invites</a></h3>
+  <ul class="">
+    <li><a href="#unity" class="overview_link active">Overview</a></li>
+    <li><a href="#unity" class="unity_link">Unity</a></li>
+    <li><a href="#ios" class="ios_link">iOS</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>
+
+  <h3><a href="/documentation/cloud-storage"><i class="icon-chevron-right"></i> Cloud Storage</a></h3>
+  <ul class="">
+    <li><a href="#unity" class="overview_link active">Overview</a></li>
+    <li><a href="#unity" class="unity_link">Unity</a></li>
+    <li><a href="#ios" class="ios_link">iOS</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>
+
+
+  <h3><a href="/documentation/achievements"><i class="icon-chevron-right"></i> Achievements</a></h3>
+  <ul class=""> 
+    <li><a href="#unity" class="overview_link active">Overview</a></li>
+    <li><a href="#unity" class="unity_link">Unity</a></li>
+    <li><a href="#ios" class="ios_link">iOS</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>
+-->
+
+  <div class="sidenav_buttons">
+    <a href="../../external.html?link=http://openkit.io/downloads">SDK Downloads</a>
+    <a href="../../external.html?link=http://openkit.io/help">Help</a>
+  </div>
+
+</div>
+</div>
+
+      <div class="content">
+        <div class="content_wrapper">
+
+
+        <h1 class="first">Running the Unity Demo Scene</h1>
+        <h2>Integrating the Unity Plugin</h2>
+
+        <p>The OpenKit Unity Plugin is now <a href="../../external.html?link=http://openkit.io/downloads">available for download</a> and supports both iOS and Android.</p>
+
+        <p>Once you have downloaded the package, import the package into your project and select all files.</p>
+
+        <p>Then follow the instructions here to integrate the plugin into your game. At a high level, you will need to:</p>
+
+        <ol>
+          <li><a href="../../external.html?link=http://developer.openkit.io/developers/new">Signup for OpenKit</a> and create an OpenKit application</li>
+          <li><a href="#facebook">Create a Facebook application</a></li>
+          <li>Set the API keys for Facebook and OpenKit in your game</li>
+          <li>Add the OpenKit API calls</li>
+        </ol>
+
+        <p>The OpenKit plugin unity package contains a demo Scene that you can use to see sample calls and try out the service. </p>
+
+        <p>The OpenKit unity plugin can only be used by building and running on an actual device (iOS and Android). It will not work in the Unity simulator. </p>
+
+        <p>You will need to create your own Facebook application for this demo scene to work correctly, and set your Facebook application ID in the correct places.</p>
+
+        <h2>Running the demo scene</h2>
+
+        <p>Follow these steps to run the OpenKit demo scene.</p>
+
+        <h3>1. Import the OpenKit Unity package</h3>
+        <p>Go to Assets-->Import Package-->Custom package and choose the OpenKit Unity plugin package. Import all files</p>
+
+        <img src="../images/support/unity_1.png">
+
+        <h3>2. Follow the <a href="#unity">Unity integration guide</a> to create a Facebook application and set your Facebook application ID in Unity</h3>
+
+        <h3>3. Open up the "DemoScene" scene in Assets/Examples/OKDemoScene</h3>
+
+        <h3>4. Click on File-->Build Settings</h3>
+
+        <h3>5. Click "Add Current" to add the DemoScene to "Scenes in Build"</h3>
+
+        <p>It should look like this:</p>
+
+        <img src="../images/support/unity_2.png">
+
+        <h3>6. Choose iOS or Android and click "Build and Run"</h3>
+
+        <p>Note: you must build and run your game on an actual iOS or Android Device. The OpenKit plugin will not work on the iOS Simulator or the Android Emulator. </p>
+
+        <p>When using the demo scene, be sure to use XCode or Eclipse/LogCat to view log statements. Some of the buttons in the demo scene don't trigger any UI actions, but you can see the results in the log statements. </p>
+
+        <h2>Troubleshooting Facebook Login Issues</h2>
+
+        <p>If you're having issues trying out the demo scene, make sure you have configured the following correctly:</p>
+
+        <ul class="bullets">
+          <li>Your bundle identifier in Unity should match the bundle identifier in your Facebook application settings for iOS and Android</li>
+          <li>You should have added your Android debug keyhash to your Facebook app</li>
+          <li>Your Facebook application ID is correctly specified in both your AndroidManifest.xml file, as well as the OpenKit PostBuildScript </li>
+          <li>In your AndroidManifest.xml file, you specified your Facebook ID and made sure to keep the SLASH , for example:</li>
+        </ul>
+
+  <pre> <code>
+  &lt;meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="\ 450333868362300"&gt;&lt;/meta-data&gt;
+        </code> </pre>
+
+
+
+
+
+          <div id="android"></div>
+          <h1>Running the Android Sample App</h1>
+                <p>This quickstart guide will help you set up the OpenKit SDK and try out the sample app. It assumes you have already installed the following:
+          </p>
+
+                <ul class="bullets">
+                  <li>Eclipse</li>
+                  <li>Android SDK</li>
+                  <li>ADT Plugin</li>
+                </ul>
+
+                <p>You can install both Eclipse and the ADT plugin from <a href="../../external.html?link=http://developer.android.com/sdk/index.html">here</a>.</p>
+
+                <h2>Getting the SDK</h2>
+                <p>Clone <a href="../../external.html?link=https://github.com/OpenKit/openkit-android">openkit-android</a>.  Alternatively, you can visit the  link and click the 'ZIP' button on GitHub.</p>
+          <pre>
+            $ git clone https://github.com/OpenKit/openkit-android.git
+          </pre>
+
+                <h2>Import the SDK &amp; Sample App Into Eclipse</h2>
+                <p>In Eclipse, select <b>File &gt; Import</b>, then choose <b>Existing Projects into Workspace</b> under the <b>General</b> tab and click Next.</p>
+
+                <img src="../images/support/android_1.png">
+
+                <p>Next, browse to and select the <b>openkit-android</b> directory: </p>
+
+                <img src="../images/support/android_9.png">
+
+              <p>Eclipse should find 3 projects. Make sure <b>OpenKitSDK</b>,<b>OKSampleApp</b>, and the <b>FacebookSDK</b> are checked. </p>
+
+                <p>Click finish, and select <b>Project &gt; Clean</b>.  When that finishes, right click on OKSampleApp and select <b>Run As &gt; Android Application</b>.</p>
+
+                <img src="../images/support/android_3.png">
+
+                <p>The OpenKit sample app will work on virtual devices and on Android devices that support Android 4.0.</p>
+
+             <p>To avoid Facebook signing issues, run the sample app on a device that does not have Facebook for Android installed (the simulator works well).</p>
+            <p> If you want to use a device that has Facebook installed, you will need to create your own Facebook application and set the sample app to use this Facebook application ID. For a walkthrough of setting up a Facebook application, see our <a href="#facebook">Facebook guide here.</a> </p>
+
+                <h2>Using the Sample App</h2>
+                <p>To get a feel for the OpenKit SDK, try the following in the sample app:</p>
+                <ul class="bullets">
+                  <li>Log into OpenKit to see user authentication</li>
+                  <li>See a demo of cloud data</li>
+                  <li>View the source of OKCloudSampleActivity.java to see the cloud data storage API in action</li>
+                  <li>View Leaderboards</li>
+                  <li>Submit a score to the Leaderboards</li>
+                  <li>View the source of "MainActivity.java" to see how to integrate the OpenKit SDK</li>
+                  <li>View the source of "SubmitScoreActivity.java" to see how to submit scores to leaderboards</li>
+              <li>View AndroidManifest.xml to see what changes are needed and how to use your own Facebook application ID </li>
+                </ul>
+                <p>You can also explore the OpenKitSDK project to see how it works.</p>
+
+				<div id="ios"></div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<a href="#" class="scrollup"><i class="icon-caret-up"></i></a>
+</body>
+
+<!-- Mirrored from openkit.io/documentation/sample-apps by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Jun 2014 09:38:47 GMT -->
+</html>

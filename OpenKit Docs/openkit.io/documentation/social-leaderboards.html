@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Mirrored from openkit.io/documentation/social-leaderboards by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Jun 2014 09:38:47 GMT -->
+<head>
+  <meta charset="utf-8">
+  <title>OpenKit Documentation - Social Leaderboards</title>
+  <meta name="description" content="" />
+
+  <link rel="stylesheet" href="../css/reset.css" />
+<link rel="stylesheet" href="../css/support.css" />
+
+<link href='../../external.html?link=http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../css/elusive-webfont.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<script type="text/javascript" src="../js/html5shiv.js"></script>
+<script type="text/javascript" src="../../ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript">
+if (typeof jQuery == 'undefined')
+{
+document.write(unescape("%3Cscript src='../js/jquery-1.8.0.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
+<script type="text/javascript" src="../js/waypoints.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+
+		$('#overview').waypoint(function(direction) {
+	    	if (direction === 'down') {
+				$('.sidenav a').removeClass('active');
+  				$('.overview_link').addClass('active');
+			}
+	  	}, { offset: 0}).waypoint(function(direction) {
+	    	if (direction === 'up') {
+	    		$('.sidenav a').removeClass('active');
+  				$('.overview_link').addClass('active');
+  			}
+	  	}, { offset: -100 });
+
+	  	$('#facebook').waypoint(function(direction) {
+	    	if (direction === 'down') {
+				$('.sidenav a').removeClass('active');
+  				$('.facebook_link').addClass('active');
+			}
+	  	}, { offset: 0}).waypoint(function(direction) {
+	    	if (direction === 'up') {
+	    		$('.sidenav a').removeClass('active');
+  				$('.overview_link').addClass('active');
+  			}
+	  	}, { offset: -100 });
+
+	  	$('#unity').waypoint(function(direction) {
+	    	if (direction === 'down') {
+				$('.sidenav a').removeClass('active');
+  				$('.unity_link').addClass('active');
+			}
+	  	}, { offset: 0}).waypoint(function(direction) {
+	    	if (direction === 'up') {
+	    		$('.sidenav a').removeClass('active');
+  				$('.unity_link').addClass('active');
+  			}
+	  	}, { offset: -100 });
+
+
+	  	$('#ios').waypoint(function(direction) {
+	    	if (direction === 'down') {
+				$('.sidenav a').removeClass('active');
+  				$('.ios_link').addClass('active');
+			}
+	  	}, { offset: 0}).waypoint(function(direction) {
+	    	if (direction === 'up') {
+	    		$('.sidenav a').removeClass('active');
+  				$('.ios_link').addClass('active');
+  			}
+	  	}, { offset: -100 });
+
+	  	$('#android').waypoint(function(direction) {
+	    	if (direction === 'down') {
+				$('.sidenav a').removeClass('active');
+  				$('.android_link').addClass('active');
+			}
+	  	}, { offset: 0}).waypoint(function(direction) {
+	    	if (direction === 'up') {
+	    		$('.sidenav a').removeClass('active');
+  				$('.android_link').addClass('active');
+  			}
+	  	}, { offset: -100 });
+
+
+		$(window).scroll(function(){
+			if ($(this).scrollTop() > 100) {
+				$('.scrollup').fadeIn();
+			} else {
+				$('.scrollup').fadeOut();
+			}
+		});
+
+		$('.scrollup').click(function(){
+			$("html, body").animate({ scrollTop: 0 }, 600);
+			return false;
+		});
+	});
+
+</script>
+</head>
+
+<body class="support" id="overview">
+  <div class="support_wrapper">
+  
+
+  <nav>
+    <a href="../../external.html?link=http://openkit.io/" class="logo" title="OpenKit"><img src="../images/logo.png"></a>
+    <ul>
+      <li><a href="../../external.html?link=http://openkit.io/documentation" class="active">Documentation</a></li>
+      <li><a href="../../external.html?link=http://openkit.io/downloads">Downloads</a></li>
+      <li><a href="../../external.html?link=http://openkit.io/help">Help</a></li>
+      <li><a href="../../external.html?link=http://developer.openkit.io/">Login</a></li>
+      <li><a href="../../external.html?link=http://developer.openkit.io/developers/new">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <section>
+      
+<div class="sidenav">
+  <div class="sidenav_inner">
+
+  <h3><a href="../../external.html?link=http://openkit.io/documentation"><i class="icon-chevron-right"></i> Getting Started</a></h3>
+  <ul class="">
+    <li><a href="#overview" class="overview_link active">Overview</a></li>
+    <li><a href="#facebook" class="facebook_link">Facebook Setup</a></li>
+    <li><a href="#unity" class="unity_link">Unity</a></li>
+    <li><a href="#ios" class="ios_link">iOS</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>  
+
+  <h3><a href="sample-apps.html"><i class="icon-chevron-right"></i> Sample Apps</a></h3>
+  <ul class="">
+    <li><a href="#unity" class="overview_link active">Unity</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>
+
+  <h3><a href="social-leaderboards.html"><i class="icon-chevron-down"></i> Social Leaderboards</a></h3>
+  <ul class="active">
+    <li><a href="#overview" class="overview_link active">Overview</a></li>
+    <li><a href="#unity" class="unity_link">Unity</a></li>
+    <li><a href="#ios" class="ios_link">iOS</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>
+
+  <h3><a href="social-challenges.html"><i class="icon-chevron-right"></i> Social Challenges</a></h3>
+  <ul class="">
+    <li><a href="#" class="overview_link active">Overview</a></li>
+  </ul>
+
+
+<!--
+  <h3><a href="/documentation/smart-invites"><i class="icon-chevron-right"></i> Smart Invites</a></h3>
+  <ul class="">
+    <li><a href="#unity" class="overview_link active">Overview</a></li>
+    <li><a href="#unity" class="unity_link">Unity</a></li>
+    <li><a href="#ios" class="ios_link">iOS</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>
+
+  <h3><a href="/documentation/cloud-storage"><i class="icon-chevron-right"></i> Cloud Storage</a></h3>
+  <ul class="">
+    <li><a href="#unity" class="overview_link active">Overview</a></li>
+    <li><a href="#unity" class="unity_link">Unity</a></li>
+    <li><a href="#ios" class="ios_link">iOS</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>
+
+
+  <h3><a href="/documentation/achievements"><i class="icon-chevron-right"></i> Achievements</a></h3>
+  <ul class=""> 
+    <li><a href="#unity" class="overview_link active">Overview</a></li>
+    <li><a href="#unity" class="unity_link">Unity</a></li>
+    <li><a href="#ios" class="ios_link">iOS</a></li>
+    <li><a href="#android" class="android_link">Android</a></li>
+  </ul>
+-->
+
+  <div class="sidenav_buttons">
+    <a href="../../external.html?link=http://openkit.io/downloads">SDK Downloads</a>
+    <a href="../../external.html?link=http://openkit.io/help">Help</a>
+  </div>
+
+</div>
+</div>
+
+      <div class="content">
+        <div class="content_wrapper">
+			
+<!------------------------------ OVERVIEW ------------------------------>
+		  
+          <h1 class="first">Social Leaderboards</h1>
+          <p>OpenKit social leaderboards, combined with social challenges, let players see how they rank amongst their friends, and see how they stack up against all players.</p>
+		  
+		  <center><img src="../images/ok_social_leaderboard.png"></center>
+
+<p>OpenKit social leaderboards have two sections: Friends' scores, and Global Scores.</p>
+
+		<h2>OpenKit User Accounts</h2>
+		<p>OpenKit user accounts are created when a player authenticates with either a Facebook account or a Google account. This allows players to submit scores to OpenKit leaderboards. </p>
+
+		<h2>OpenKit Leaderboards and GameCenter</h2>
+		
+		<p>OpenKit social leaderboards work in tandem with GameCenter leaderboards. When using both GameCenter and OpenKit, OpenKit will display the global leaderboard from GameCenter, and show friends scores from Facebook (OpenKit) as well as from GameCenter.</p>
+		
+		<p>If you're using both, be sure to create OpenKit leaderboards in the OpenKit dashboard that match your defined GameCenter leaderboards. Then in the OpenKit dashboard, for each leaderboard, be sure to specify your corresponding GameCenter category </p>
+		
+		<p>When submitting a score using the OKScore class, be sure to set the GameCenter leaderboard category. OpenKit will always submit scores to GameCenter when specified.</p>
+		  
+		  <div id="unity"></div>
+		  
+<!------------------------------ UNITY SOCIAL LEADERBOARD ------------------------------>
+		  
+		  <h1>Unity</h1>
+		  
+		  <p>
+		  When using OpenKit functions, be sure to import OpenKit:</p>
+
+		  <pre><code>using OpenKit;</code></pre>
+		  
+		  <h3>Show Leaderboards</h3>
+		  <p>To show a list of leaderboards, call:</p>
+
+		  <pre><code>OKManager.ShowLeaderboards();</code></pre>
+
+
+		  <h3>Show a Specific Leaderboard</h3>
+		  <p>To show a specific leaderboard, call:</p>
+		  <pre><code>OKManager.ShowLeaderboard(leaderboardID);</code></pre>
+		  <p>LeaderboardID is the OpenKit leaderboard ID for the leaderboard you want to show.</p>
+
+		  <h3>Submit a Score</h3>
+		  <p>To submit a score,  you simply create an OKScore object, set the appropriate values, then call Submit.</p>
+
+		  <p>If the player is not authenticated with OpenKit, their score is cached locally and submitted once they authenticate.</p>
+		  
+<pre><code>long ScoreValue = 234234;
+int SampleLeaderboardID = 23423;
+OKScore score = new OKScore(ScoreValue, SampleLeaderboardID);
+score.displayString = "4334 points";
+score.gameCenterLeaderboardCategory = SampleLeaderboardGameCenterCategory;
+//If you're using OpenKit leaderboards alongside GameCenter on iOS, be sure to set the GameCenter leaderboard Category
+		
+Action&lt;bool, string&gt; submitCallback = (success, errorMessage) =&gt; {
+	if (success) {
+		Debug.Log("Score submitted successfully!");
+	} else {
+		Debug.Log("Score did not submit. Error: " + errorMessage);
+	}
+};
+
+score.SubmitScore(submitCallback);</code></pre>
+
+		<h3>OKUser Account<h3>
+		<p>To check if a player is authenticated with OpenKit, simply call:</p>
+<pre><code>if(OKUser.GetCurrentUser() == null) {
+	//Player is not logged in
+} else {
+	// Player is logged in
+}</code></pre>
+
+<!------------------------------ IOS SOCIAL LEADERBOARD ------------------------------>
+
+<div id="ios"></div>
+<h1>iOS</h1>
+<p>When using OpenKit functions, be sure to import OpenKit:</p>
+
+<pre><code>#import "OpenKit.h"</code></pre>
+		  <h3>Show Leaderboards</h3>
+		  <p>To show a list of leaderboards, call:</p>
+
+<pre><code>OKLeaderboardsViewController *leaderBoards = [[OKLeaderboardsViewController alloc] init];
+// Set the showLandscapeOnly property on OKLeaderboardsViewController to force landscape orientation
+//[leaderBoards setShowLandscapeOnly:YES];
+    
+[self presentViewController:leaderBoards animated:YES completion:nil];</code></pre>
+
+
+		  <h3>Show a Specific Leaderboard</h3>
+		  <p>To show a specific leaderboard, call:</p>
+<pre><code>OKLeaderboardsViewController *leaderBoards = [[OKLeaderboardsViewController alloc] initWithDefaultLeaderboardID:385];
+
+[self presentViewController:leaderBoards animated:YES completion:nil];</code></pre>
+		  <p>LeaderboardID is the OpenKit leaderboard ID for the leaderboard you want to show.</p>
+
+		  <h3>Submit a Score</h3>
+		  <p>To submit a score,  you simply create an OKScore object, set the appropriate values, then call Submit.</p>
+
+		  <p>If the player is not authenticated with OpenKit, their score is cached locally and submitted once they authenticate.</p>
+		  
+<pre><code>OKScore *score = [[OKScore alloc] init];
+[score setScoreValue:224342];
+[score setDisplayString:@"224342 points"];
+[score setOKLeaderboardID:385];
+[score setGamecenterLeaderboardID:@"leaderboard1"];
+
+[score submitScoreWithCompletionHandler:^(NSError *error) {
+    if(error) {
+        NSLog(@"There was an error submitting the score");
+    } else {
+        NSLog(@"Score submitted successfully");
+    }
+}];
+</code></pre>
+
+		<h3>OKUser Account<h3>
+		<p>To check if a player is authenticated with OpenKit, simply call:</p>
+<pre><code>if ([OKUser currentUser] == nil) {
+    //Player is not logged in
+} else {
+    //Player is logged in
+}
+</code></pre>
+
+<!------------------------------ ANDROID SOCIAL LEADERBOARD ------------------------------>
+		<div id="android"></div>
+<h1>Android</h1>
+<p>When using OpenKit functions, be sure to import OpenKit:</p>
+
+<pre><code>import io.openkit.*;</code></pre>
+		  <h3>Show Leaderboards</h3>
+		  <p>To show a list of leaderboards, call:</p>
+
+<pre><code>Intent launchOKLeaderboards = new Intent(MainActivity.this, OKLeaderboardsActivity.class);
+startActivity(launchOKLeaderboards);</code></pre>
+
+
+		  <h3>Show a Specific Leaderboard</h3>
+		  <p>To show a specific leaderboard, call:</p>
+<pre><code>Intent launchleaderboard = OKLeaderboard.getLeaderboardIntent(MainActivity.this, LeaderboardID);
+startActivity(launchleaderboard);</code></pre>
+		  <p>LeaderboardID is the OpenKit leaderboard ID for the leaderboard you want to show.</p>
+
+		  <h3>Submit a Score</h3>
+		  <p>To submit a score,  you simply create an OKScore object, set the appropriate values, then call Submit.</p>
+
+		  <p>If the player is not authenticated with OpenKit, their score is cached locally and submitted once they authenticate.</p>
+		  
+<pre><code>OKScore score = new OKScore();
+score.setScoreValue(12345);
+score.setDisplayString("12345 OpenKit points");
+score.setOKLeaderboardID(385);
+
+score.submitScore(new OKScore.ScoreRequestResponseHandler() {
+	
+	@Override
+	public void onSuccess() {
+		Debug.Log("OpenKit"", "Submitted score successfully");
+	}
+
+	@Override
+	public void onFailure(Throwable error) {
+		Debug.Log("OpenKit"", "Failed to submit score with error: " + error);
+	}
+});
+</code></pre>
+
+		<h3>OKUser Account<h3>
+		<p>To check if a player is authenticated with OpenKit, simply call:</p>
+<pre><code>if(OKUser.getCurrentUser() == null) {
+    //Player is not logged in
+} else {
+    //Player is logged in
+}
+</code></pre>
+          
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<a href="#" class="scrollup"><i class="icon-caret-up"></i></a>
+</body>
+
+<!-- Mirrored from openkit.io/documentation/social-leaderboards by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Jun 2014 09:38:47 GMT -->
+</html>

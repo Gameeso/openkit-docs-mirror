@@ -1,0 +1,218 @@
+.clearfix{clear:both;}
+.bold{font-weight:bold;}
+html, body {height: 100%;}
+body{color:#333;font-family: 'Lato', 'HelveticaNeue', Helvetica, Arial, sans-serif;}
+.logo{float:left;padding:29px 0 0 0;}
+.support{background:#eee url(../images/bg.png);}
+.support_wrapper{width:984px;margin:0 auto;padding:0 20px 80px 20px;}
+
+nav{}
+nav ul{float:right;position: relative;z-index: 9999;top:1px;}
+nav ul li{display:block;float:left;margin:0 20px;}
+nav ul li a{color:#888;text-decoration:none;text-transform:uppercase;font-size: 13px;text-shadow:0 1px solid #fff;display:block;padding:34px 0;letter-spacing: 0.1em}
+nav ul li:last-child a{color:#3498DB;}
+nav ul li a.active{color:#333;background: transparent url(../images/arrow.png) center bottom no-repeat}
+
+.scrollup{display:none;position: fixed;z-index:9999;right:20px;bottom:20px;background:rgba(0,0,0,0.15);color:#fff;text-decoration: none;padding:10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+section{background:#f8f8f8;width:100%;margin: 0 auto;padding:0;overflow: hidden;position: relative;clear: both;
+  box-shadow: 0 0 3px #888;
+  -webkit-box-shadow: 0 0 3px #888;
+  -moz-box-shadow: 0 0 3px #888;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+
+.sidenav{width:20%;float:left;background:#f8f8f8;min-height: 800px;}
+.sidenav_inner{position: fixed;width:197px;}
+.sidenav h3{font-weight: bold;font-size: 13px;padding:20px 0 10px 30px;-webkit-transform: translateZ(0);}
+.sidenav h3:first-child{padding-top: 30px}
+.sidenav h3 a{color: #34495E;text-decoration: none;-webkit-transition:all .2s ease-in-out;}
+.sidenav h3 a:hover{color:#3498DB;}
+.sidenav ul{margin-bottom: 10px;-webkit-transform: translateZ(0);}
+.sidenav ul li{display:none;}
+.sidenav ul.active li{display:block;}
+.sidenav li a{font-size:13px;padding:8px 0 8px 30px;display:block;text-decoration: none;color:#3498DB;border-bottom:1px solid #f8f8f8;border-top:1px solid #f8f8f8;-webkit-transition:all .2s ease-in-out}
+.sidenav li a:hover{color:#2b3d51;}
+.sidenav a.active{background:#fff;border-bottom:1px solid #ddd;border-top:1px solid #ddd;}
+
+.sidenav_buttons{margin-top:40px;}
+.sidenav_buttons a{display:block;margin:20px 0 0 20px;padding:10px 0;font-size:12px;text-decoration:none;text-transform: uppercase;letter-spacing: 1px;word-spacing:2px;background:#3498db;color:#fff;width:150px;text-align: center;
+  -webkit-transition:all .1s ease-in-out; 
+  -webkit-transition:all .1s ease-in-out;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.sidenav_buttons a:hover{background:#5dade2;}
+
+.content{float:left;width:80%;background:#fff;min-height: 800px;
+  box-shadow: 0 -3px 3px #ccc;
+  -webkit-box-shadow: 0 -3px 3px #ccc;
+  -moz-box-shadow: 0 -3px 3px #ccc;
+}
+.content_wrapper{padding:40px;}
+.content h1{font-weight:600;font-size:30px;margin:2em 0 0.5em 0;border-bottom: 1px solid #eee;padding-bottom: 0.5em}
+.content h1.first{margin:0 0 0.5em 0;}
+.content h2{font-weight:600;font-size: 24px;color: #333;margin:2em 0 0.5em 0;border-bottom: 1px solid #eee;padding-bottom: 0.5em}
+.content h3{font-weight:600;font-size: 18px;color: #333;margin:2em 0 0.5em 0;}
+
+
+.content p{margin:1em 0;line-height: 24px;font-size: 14px;color: #666 }
+.content b{font-weight:bold;}
+
+.content ul{font-size: 14px;list-style: disc;list-style-position: inside;margin: 20px 0}
+.content ul li{margin:10px;}
+
+.content table{background:#fff;width:100%;font-size:14px;margin:1em 0;}
+.content table th{border:1px solid #ccc;padding:10px;width:33.3%;background:#444;color:#fff;font-weight:bold;text-shadow:0 -1px 0 #000;}
+.content table td{border:1px solid #ccc;padding:20px;}
+.content table td a{}
+
+.content ul, 
+.content ol{margin:10px 0 10px 40px;font-size:14px;color:#34495e;}
+.content li{margin-top:10px;line-height: 20px}
+
+.content ul.bullets{list-style-type: disc;list-style-position: inside}
+.content ul.circles{list-style-type: circle;list-style-position: inside}
+
+.content ol{font-size:14px;list-style-type: decimal;list-style-position: inside}
+.content img{background:#fff;padding:10px;margin:10px 0;max-width:100%;height:auto;
+    -webkit-box-shadow:0 0 3px rgba(0,0,0,0.25);
+    -moz-box-shadow:0 0 3px rgba(0,0,0,0.25);
+    box-shadow:0 0 3px rgba(0,0,0,0.25);
+}
+.gist{margin-top:10px;}
+.gist-meta{display:none;}
+
+pre{margin: 10px 0 0 0;background-color: #F1F5F9;border: 1px solid #C7CFD5;padding: 10px;color: #111;overflow: auto;font: 1em "Droid Sans Mono",Monaco,monospace;line-height: 1.5;font-weight: 300;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+
+
+.content .platform{background:#f5f5f5;margin:20px 0;padding:20px;
+  -webkit-box-shadow:0 0 3px rgba(0,0,0,0.25);
+  -moz-box-shadow:0 0 3px rgba(0,0,0,0.25);
+  box-shadow:0 0 3px rgba(0,0,0,0.25);
+}
+.content .platform h3{margin:0;color:#333;}
+.content .platform p{color:#333;}
+.content .note{background:lightyellow;}
+
+
+section.help, section.downloads{background:#fff;width: 100%}
+section.help .inner, section.downloads .inner{padding:40px;min-height: 800px} 
+
+.help h1{font-weight:600;font-size:30px;margin:0 0 1.5em 0;border-bottom: 1px solid #eee;padding-bottom: 0.5em}
+.help p{margin:1em 0;color: #666 }
+
+.help b{font-weight:bold;}
+
+.downloads h1{font-weight:600;font-size:30px;margin:0 0 1.5em 0;border-bottom: 1px solid #eee;padding-bottom:0.5em}
+
+.sdk_downloads{float:left;width:100%;}
+.sdk_downloads_inner{width:100%;}
+.sdk_downloads ul{}
+.sdk_downloads li{display: block;padding:0 0 0 0;overflow: hidden;float:left;width:33.3%;}
+.sdk_downloads li:nth-child(3){padding-right: 0}
+.sdk_downloads li p{clear:both;line-height: 32px;padding:0 0 10px 0;overflow: hidden;}
+.sdk_downloads li img{width:32px;height:auto;float:left;margin-right: 10px}
+.sdk_downloads label{line-height: 32px;font-weight: bold;display: block;margin:0 0 10px 0;}
+.sdk_downloads span{display: block;font-size: 12px;color:#999;line-height:18px}
+.sdk_downloads a{border:1px solid #dddddd;border-right:1px solid #f9f9f9;padding:10px 20px;margin:10px 0 0 0;float:left;display: block;text-decoration: none;text-shadow:0 1px 0 #fff;color:#333;font-weight: bold;
+  background: #f9f9f9; /* Old browsers */
+  background: -moz-linear-gradient(top, #f9f9f9 0%, #ebebeb 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#ebebeb)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f9f9f9 0%,#ebebeb 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f9f9f9 0%,#ebebeb 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f9f9f9 0%,#ebebeb 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #f9f9f9 0%,#ebebeb 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
+}
+.sdk_downloads a:last-child{border-right:1px solid #ddd;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.sdk_downloads a.first{
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.sdk_downloads a span{display: block;font-size: 12px;font-weight: normal;color:#999;}
+.sdk_downloads a:hover{border:1px solid #b5b5b5;
+  background: #e9e9e9; /* Old browsers */
+  background: -moz-linear-gradient(top, #e9e9e9 0%, #dbdbdb 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e9e9e9), color-stop(100%,#dbdbdb)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e9e9e9 0%,#dbdbdb 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #e9e9e9 0%,#dbdbdb 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #e9e9e9 0%,#dbdbdb 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #e9e9e9 0%,#dbdbdb 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9e9', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-9 */
+}
+
+.doc_links a{text-decoration: underline;background:none;color:blue;border:0;padding:0;margin:20px 0 0 0;font-weight:normal;}
+.doc_links a:last-child{border:none;}
+.doc_links a:hover{background:none;}
+
+.past_releases{float: left;padding-left:40px;width:60%;display:none;}
+.past_releases_inner{padding:0;width: 100%}
+.past_releases h1{font-weight: 600;font-size: 30px;margin: 0 0 0.5em 0;}
+.past_releases table{margin:20px 0 0 0;text-align: left;width: 100%}
+.past_releases table th{background: #eee;border: 1px solid #ccc;padding:15px;font-size: 13px;font-weight: bold;text-shadow:0 1px 0 #fff;
+  background: #f5f5f5;
+background: -moz-linear-gradient(top, white 0%, whitesmoke 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, whitesmoke));
+background: -webkit-linear-gradient(top, white 0%, whitesmoke 100%);
+background: -o-linear-gradient(top, white 0%, whitesmoke 100%);
+background: -ms-linear-gradient(top, white 0%, whitesmoke 100%);
+background: linear-gradient(top, white 0%, whitesmoke 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#f5f5f5',GradientType=0 );
+}
+.past_releases table td{border:1px solid #ddd;padding:15px;}
+
+sub, sup {
+  /* Specified in % so that the sup/sup is the
+     right size relative to the surrounding text */
+  font-size: 55%;
+
+  /* Zero out the line-height so that it doesn't
+     interfere with the positioning that follows */
+  line-height: 0;
+
+  /* Where the magic happens: makes all browsers position
+     the sup/sup properly, relative to the surrounding text */
+  position: relative;
+
+  /* Note that if you're using Eric Meyer's reset.css, this
+     is already set and you can remove this rule */
+  vertical-align: baseline;
+}
+
+sup {
+  /* Move the superscripted text up */
+  top: -0.6em;
+}
+
+sub {
+  /* Move the subscripted text down, but only
+     half as far down as the superscript moved up */
+  bottom: -0.25em;
+}
+
+
+
